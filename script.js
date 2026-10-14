@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadRepoPDF() {
     try {
-        loading.textContent = 'Cargando "Mi Mundo Azul"... Por favor espere.';
+        loading.textContent = 'Cargando "Mimundoazul"... Por favor espere.';
         pdfDoc = await pdfjsLib.getDocument(BOOK_PATH).promise;
         
         const totalPages = pdfDoc.numPages;
@@ -94,7 +94,7 @@ async function loadRepoPDF() {
         });
 
         updatePageInfo();
-        announceToScreenReader('El cuento "Mi Mundo Azul" se ha cargado correctamente.');
+        announceToScreenReader('El cuento "Mimundoazul" se ha cargado correctamente.');
 
     } catch (error) {
         console.error('Error al cargar el PDF:', error);
